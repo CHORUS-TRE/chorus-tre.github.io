@@ -40,5 +40,6 @@ $ GIT_USER=<Your GitHub username> yarn deploy
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
 
-Any use of the software for purposes other than academic research, including for commercial purposes, shall be requested in advance from CHUV.
+## License and Usage Restrictions
 
+Any use of the software for purposes other than academic research, including for commercial purposes, shall be requested in advance from CHUV.
