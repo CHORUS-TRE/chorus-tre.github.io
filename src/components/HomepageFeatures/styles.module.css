@@ -5,7 +5,15 @@
   width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.featureImg {
+  margin-bottom: 1em;
 }
+
+.header {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
