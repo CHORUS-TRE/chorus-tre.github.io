@@ -40,20 +40,24 @@ const config: Config = {
           editUrl:
             'https://github.com/chorus-tre/chorus-tre.github.io/tree/master/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/chorus-tre/chorus-tre.github.io/tree/master/',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
     ],
   ],
-
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'community',
+        path: 'community',
+        routeBasePath: 'community',
+        sidebarPath: undefined,
+      },
+    ],
+  ],
   themeConfig: {
     // Replace with your project's social card
     image: 'img/logo.chorus.primaire.black.png',
@@ -66,9 +70,16 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docsSidebar',
           position: 'left',
           label: 'Documentation',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'defaultSidebar',
+          position: 'left',
+          label: 'Community',
+          docsPluginId: 'community',
         },
         {
           href: 'https://github.com/CHORUS-TRE',

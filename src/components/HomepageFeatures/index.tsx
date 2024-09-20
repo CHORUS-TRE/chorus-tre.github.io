@@ -1,7 +1,6 @@
 import clsx from 'clsx'
 import Heading from '@theme/Heading'
 import styles from './styles.module.css'
-// import dowhat from '@site/static/img/dowhat.png';
 
 type FeatureItem = {
   title: string
@@ -44,7 +43,7 @@ function Feature({ title, img, description }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <img src={img} alt="dowhat" className={styles.featureImg}/>
+        <img src={img} alt="logo" className={styles.featureImg} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
@@ -58,7 +57,7 @@ export default function HomepageFeatures(): JSX.Element {
   return (
     <>
       <div className={styles.header}>
-        <h2>Accelerating access to data and research collaborations through trusted research environments (TREs)</h2>
+        <h2>CHORUS-TRE is a secure Trusted Research Environment developed by the <a href="https://www.chuv.ch/fr/bdsc/" target='_blank'>BDSC</a>, <a href="https://www.chuv.ch/fr/neurosciences/dnc-home/recherche/centre-de-recherche-en-neurosciences/neurotech/research-labs/neurodigitalneurotech" target='_blank'>NeuroDigital</a> and <a href="https://www.chuv.ch/fr/fiches/direction-des-systemes-dinformation" target='_blank'>DSI</a> teams of the University Hospital of Lausanne, Switzerland.</h2>
       </div>
       <section className={styles.features}>
         <div className="container">

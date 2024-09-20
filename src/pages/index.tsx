@@ -32,7 +32,7 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title}`}
       description="CHORUS-TRE is a secure Trusted Research Environment developed by the BDSC, NeuroDigital and DSI teams of the University Hospital of Lausanne, Switzerland.">
       <HomepageHeader />
       <main>
