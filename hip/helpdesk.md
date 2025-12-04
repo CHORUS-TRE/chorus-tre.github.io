@@ -1,6 +1,7 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 ---
 
-# HelpDesk
+# Helpdesk
 
+Support and helpdesk resources for CHORUS.HIP.
