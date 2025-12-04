@@ -6,6 +6,12 @@
 
 /* You can override the default Infima variables here. */
 :root {
+  /* CHORUS Brand Colors */
+  --chorus-blue: #1240FF;
+  --chorus-turquoise: #32E8FF;
+  --chorus-lime: #B6FF12;
+  --chorus-flower: #ABA5F5;
+
   --ifm-color-primary: #1F242A;
   --ifm-color-secondary: #B6FC13;
   --ifm-color-primary-dark: #0430CD;
@@ -25,6 +31,11 @@
   --ifm-link-hover-color: var(--ifm-color-primary)
 }
 
+/* Apply chorus blue color to links in main content areas only */
+article .markdown a {
+  color: var(--chorus-blue);
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #1F242A;
@@ -38,3 +49,14 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Change the color of the arrow (marker) for all summary elements */
+/* summary::marker {
+  color: #B6FF12;
+} */
+
+/* Hide next/previous pagination links across docs */
+.pagination-nav {
+  display: none !important;
+}
+

@@ -23,6 +23,7 @@ function HomepageHeader() {
             CHORUS-TRE Documentation
           </Link>
         </div>
+        
       </div>
     </header>
   );

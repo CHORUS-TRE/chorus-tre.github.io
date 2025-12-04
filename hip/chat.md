@@ -1,5 +1,7 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# Chat
+# CHORUS.HIP Chat
+
+Contact and communication channels for CHORUS.HIP.

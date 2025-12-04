@@ -1,0 +1,142 @@
+.appCardContainer {
+  flex: 0 0 calc(25% - 1rem);
+  min-width: 200px;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.appCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  padding-bottom: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px 8px 0 0;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+  min-height: 180px; /* Slightly larger top section (logo+name+version) */
+  flex: 0 0 auto;
+}
+
+.appCard:hover {
+  box-shadow: 0 4px 12px rgba(18, 64, 255, 0.1);
+}
+
+.appLogo {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.appLogoPlaceholder {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--chorus-blue);
+  color: white;
+  font-size: 1.75rem;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.appInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  width: 100%;
+}
+
+.appNameLink {
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.appNameLink:hover {
+  opacity: 0.8;
+}
+
+.appName {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--chorus-blue);
+  text-align: center;
+  word-break: break-word;
+}
+
+.appVersion {
+  font-size: 0.8rem;
+  color: #718096;
+  text-align: center;
+}
+
+.appDescription {
+  padding: 0.5rem 0.75rem;
+  color: #4a5568;
+  line-height: 1.4;
+  border: 1px solid #e2e8f0;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  background: #f5f5f5; /* Align with light gray used elsewhere */
+  font-size: 0.85rem;
+  min-height: 70px; /* Slightly smaller description section */
+  max-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.appDescription p {
+  margin: 0;
+}
+
+/* Dark mode support */
+[data-theme='dark'] .appCard {
+  background: #1a202c;
+  border-color: #2d3748;
+}
+
+[data-theme='dark'] .appName {
+  color: var(--chorus-turquoise);
+}
+
+[data-theme='dark'] .appDescription {
+  background: #2d3748;
+  border-color: #4a5568;
+  color: #cbd5e0;
+}
+
+[data-theme='dark'] .appCard:hover {
+  box-shadow: 0 4px 12px rgba(50, 232, 255, 0.1);
+}
+
+/* Responsive layout */
+@media (max-width: 996px) {
+  .appCardContainer {
+    flex: 0 0 calc(33.333% - 1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .appCardContainer {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .appCardContainer {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
