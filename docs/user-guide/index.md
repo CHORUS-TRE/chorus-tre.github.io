@@ -8,7 +8,7 @@ This guide offers a quick start with CHORUS and the resources to go deeper, incl
 
 <div class="row" style={{ marginTop: '1.5rem' }}>
 	<div class="col col--6" style={{ marginBottom: '1rem' }}>
-		<a href="/docs/category/getting-started/" style={{ textDecoration: 'none' }}>
+		<a href="/docs/user-guide/getting-started/" style={{ textDecoration: 'none' }}>
 			<div class="card" style={{ height: '100%', backgroundColor: '#f5f5f5' }}>
 				<div class="card__body" style={{ padding: '1rem 1.25rem', minHeight: '108px' }}>
 					<div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
