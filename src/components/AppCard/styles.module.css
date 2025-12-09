@@ -1,25 +1,28 @@
 .appCardContainer {
-  flex: 0 0 calc(25% - 1rem);
-  min-width: 200px;
-  max-width: 280px;
+  flex: 0 0 calc(33.333% - 0.75rem); /* Wider cards: 3 per row on large screens */
+  min-width: 260px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
+  align-items: stretch;
 }
 
 .appCard {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* logo left, info right */
   align-items: center;
-  gap: 0.75rem;
-  padding: 1.25rem;
-  padding-bottom: 0;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1rem;
   border: 1px solid #e2e8f0;
-  border-radius: 8px 8px 0 0;
-  background: white;
+  border-radius: 8px; /* all corners rounded like community cards */
+  background: #f5f5f5; /* light gray like community cards */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.2s ease;
-  min-height: 180px; /* Slightly larger top section (logo+name+version) */
+  min-height: 120px; /* closer to logo height */
+  /* remove fixed height to allow shrink-to-content */
   flex: 0 0 auto;
+  width: 100%;
 }
 
 .appCard:hover {
@@ -50,9 +53,8 @@
 .appInfo {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start; /* name and version to the right, left-aligned */
   gap: 0.25rem;
-  width: 100%;
 }
 
 .appNameLink {
@@ -66,35 +68,29 @@
 
 .appName {
   margin: 0;
-  font-size: 1.15rem;
+  font-size: 1rem; /* slightly smaller name */
   font-weight: 600;
   color: var(--chorus-blue);
-  text-align: center;
+  text-align: left;
   word-break: break-word;
 }
 
 .appVersion {
   font-size: 0.8rem;
   color: #718096;
-  text-align: center;
+  text-align: left;
 }
 
 .appDescription {
-  padding: 0.5rem 0.75rem;
+  padding-top: 0.3rem; /* bring description closer to version */
+  padding-left: 0.5rem; /* give description a bit more usable width */
+  padding-right: 0.5rem;
   color: #4a5568;
-  line-height: 1.4;
-  border: 1px solid #e2e8f0;
-  border-top: none;
-  border-radius: 0 0 8px 8px;
-  background: #f5f5f5; /* Align with light gray used elsewhere */
-  font-size: 0.85rem;
-  min-height: 70px; /* Slightly smaller description section */
-  max-height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  line-height: 1.5;
+  /* no separate border/background: it's part of the card */
+  font-size: 0.9rem;
   text-align: center;
-  overflow: hidden;
+  width: 100%;
 }
 
 .appDescription p {
@@ -112,8 +108,6 @@
 }
 
 [data-theme='dark'] .appDescription {
-  background: #2d3748;
-  border-color: #4a5568;
   color: #cbd5e0;
 }
 

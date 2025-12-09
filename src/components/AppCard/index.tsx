@@ -5,7 +5,7 @@ interface AppCardProps {
   logo?: string;
   name: string;
   version?: string;
-  description: string;
+  description?: string;
   link?: string;
 }
 
@@ -33,9 +33,11 @@ export default function AppCard({ logo, name, version, description, link }: AppC
           )}
           {version && <span className={styles.appVersion}>{version}</span>}
         </div>
-      </div>
-      <div className={styles.appDescription}>
-        <p>{description}</p>
+        {description && (
+          <div className={styles.appDescription}>
+            <p>{description}</p>
+          </div>
+        )}
       </div>
     </div>
   );

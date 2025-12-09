@@ -8,18 +8,18 @@ sidebar_position: 1
 
 <AccordionSection title="What is CHORUS?">
 
-CHORUS is a secure, open-source platform that redefines how sensitive biomedical research is conducted. Developed by CHUV's Biomedical Data Science Center, NeuroDigital, and IT Systems Department, it serves as a Trusted Research Environment (TRE) — a digital ecosystem where researchers can collaborate safely, analyze complex data, and remain fully compliant with privacy and regulatory standards.
+CHORUS is a secure, open-source Trusted Research Environment (TRE) designed for biomedical research and AI development. It provides a single, governed platform where sensitive health data can be accessed, analyzed, and shared safely, in full alignment with privacy, security, and regulatory requirements.
 
-The platform brings together what researchers usually have to manage separately: secure compute environments, governance workflows, privacy safeguards, and scientific tools. Everything — from logging into a workspace to publishing results — happens inside a controlled, monitored, and transparent environment designed specifically for healthcare and life science research.
+The platform brings together what is usually fragmented across multiple systems: secure workspaces, data governance workflows, privacy controls, and scientific tools — all in one place. From data access to analysis and result export, every step takes place inside a controlled, monitored, and auditable environment, reducing operational friction while increasing trust and compliance.
 
-Learn more about CHORUS and explore the live demo on the <a href="https://www.chorus-tre.ch/en/" style={{ color: 'var(--chorus-blue)' }}>CHORUS website</a>.
+Learn more about CHORUS and access the demo on the <a href="https://chorus-tre.org" style={{ color: 'var(--chorus-blue)' }}>CHORUS website</a>.
 
 </AccordionSection>
 
 <AccordionSection title="Who is it for?">
 
 CHORUS is built around the full research lifecycle, spanning study design, computation, governance, publication, and the ongoing reuse of data and knowledge.
-Clinical researchers use it to design and run trials securely; data scientists build AI models with reproducible datasets; statisticians perform analyses with trusted tools like R or Jupyter; and data protection officers oversee compliance in real time.
+Clinical researchers use it to design and run trials securely, data scientists build AI models with reproducible datasets, statisticians perform analyses with trusted tools like R or Jupyter, and data protection officers oversee compliance in real time.
 
 Institutions benefit as well: hospitals, universities, and research consortia can deploy CHORUS to standardize governance, reduce compliance risk, and enable collaboration without exposing sensitive data.
 
@@ -28,12 +28,12 @@ Institutions benefit as well: hospitals, universities, and research consortia ca
 <AccordionSection title="What does it do?">
 
 At its core, CHORUS enables secure research without friction.
-It provides isolated, browser-accessible workbenches where teams can analyze clinical data, train AI models, and generate reproducible results. Its built-in governance ensures that every dataset, tool, and user interaction is logged, controlled, and compliant by design.
+It provides isolated, browser-accessible sessions where teams can analyze clinical data, train AI models, and generate reproducible results. Its built-in governance ensures that every dataset, tool, and user interaction is logged, controlled, and compliant by design.
 
-Researchers can perform anything from cohort discovery and statistical analysis to neuroimaging, anonymization, and report generation — all within a governed, cloud-native environment.
+Researchers can perform anything from cohort discovery and statistical analysis to imaging analysis, anonymization, and report generation — all within a governed, cloud-native environment.
 Every operation takes place inside a defined "Safe" zone, implementing the Five Safes Framework (Safe People, Safe Projects, Safe Data, Safe Settings, Safe Outputs) directly in its architecture.
 
-For step-by-step instructions on getting started with CHORUS and detailed guidance on using the platform's features, visit the <a href="/docs/user-guide" style={{ color: 'var(--chorus-blue)' }}>User Guide</a>.
+For step-by-step guidance on using CHORUS, visit the <a href="/docs/user-guide" style={{ color: 'var(--chorus-blue)' }}>User Guide</a>.
 
 </AccordionSection>
 
@@ -49,12 +49,87 @@ Dive into the architecture and governance design in the <a href="/docs/tech/tech
 
 <AccordionSection title="Why does it matter?">
 
-Biomedical research faces a growing tension between innovation and regulation. Data is fragmented, privacy laws are strict, and collaboration across institutions is difficult. CHORUS was created to solve that.
+Biomedical research is increasingly shaped by data-intensive methods, fast-moving technologies, and growing regulatory requirements. Data, compute resources, analytical tools, and governance are often scattered across disconnected systems, slowing down projects and limiting collaboration. At the same time, AI is becoming central to discovery, demanding scalable compute, high-quality data, and reproducible environments.
 
-It unifies tools, governance, and infrastructure into one coherent experience — allowing institutions to meet ISO 27001, GDPR, and DARE UK standards while enabling researchers to work freely within those boundaries.
-In practice, this means less time negotiating access and more time generating results that matter — safely, transparently, and reproducibly.
+CHORUS brings everything needed for modern biomedical and AI-driven research into a single, governed platform: secure data access, high-performance computing, advanced analytical tools, and built-in regulatory compliance. By unifying infrastructure, workflows, and governance, it reduces friction, accelerates research cycles, and enables AI development at scale, while remaining aligned with regulatory requirements. The result is a platform that evolves with science and technology—and allows research to move faster without compromising trust.
 
 Explore CHORUS’s compliance framework in <a href="/docs/security-privacy" style={{ color: 'var(--chorus-blue)' }}>Security & Privacy</a>.
+
+</AccordionSection>
+
+<AccordionSection title="How did it begin?">
+
+<p style={{ fontSize: '0.95rem', marginBottom: '1.5rem' }}>
+  CHORUS emerged as a response to a concrete clinical and scientific need: to securely share and analyze rare, high-value data across institutions. Its roots lie in the Human Intracerebral EEG Platform (HIP), a pioneering Trusted Research Environment (TRE) for neuroscience. What began as a focused solution for epilepsy research has since evolved into a secure, open-source platform for biomedical research and AI across disciplines.
+</p>
+
+<div style={{ position: 'relative', margin: '1rem 0', fontSize: '0.9rem', transform: 'translateX(-20px)' }}>
+  {/* Vertical line passing through dots between columns */}
+  <div style={{ position: 'absolute', left: 'calc(140px + 20px - 1px)', top: 'calc(0.5rem + 1rem)', bottom: 'calc(0.5rem + 1rem)', width: '2px', background: 'var(--chorus-blue)' }} />
+
+  {/* Item 1 */}
+  <div style={{ display: 'flex', alignItems: 'center', margin: '0.5rem 0', minHeight: '2rem' }}>
+    <div style={{ flex: '0 0 140px', textAlign: 'right', color: '#000', fontSize: '0.9rem' }}><strong>Before 2020</strong></div>
+    <div style={{ flex: '0 0 40px', position: 'relative', height: '100%' }}>
+      <span style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', width: 0, height: 0, borderLeft: '6px solid transparent', borderRight: '6px solid transparent', borderTop: '10px solid var(--chorus-blue)' }} />
+    </div>
+    <div style={{ flex: 1, textAlign: 'left', fontSize: '0.9rem' }}>Need for secure sharing of rare iEEG data in epilepsy research</div>
+  </div>
+
+  {/* Item 2 */}
+  <div style={{ display: 'flex', alignItems: 'center', margin: '0.5rem 0', minHeight: '2rem' }}>
+    <div style={{ flex: '0 0 140px', textAlign: 'right', color: '#000', fontSize: '0.9rem' }}><strong>2020</strong></div>
+    <div style={{ flex: '0 0 40px', position: 'relative', height: '100%' }}>
+      <span style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', width: '8px', height: '8px', borderRadius: '50%', background: 'var(--chorus-blue)' }} />
+    </div>
+    <div style={{ flex: 1, textAlign: 'left', fontSize: '0.9rem' }}>HIP created by CHUV, AMU, UGA, and UCBL</div>
+  </div>
+
+  {/* Item 3 */}
+  <div style={{ display: 'flex', alignItems: 'center', margin: '0.5rem 0', minHeight: '2rem' }}>
+    <div style={{ flex: '0 0 140px', textAlign: 'right', color: '#000', fontSize: '0.9rem' }}><strong>2021</strong></div>
+    <div style={{ flex: '0 0 40px', position: 'relative', height: '100%' }}>
+      <span style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', width: '8px', height: '8px', borderRadius: '50%', background: 'var(--chorus-blue)' }} />
+    </div>
+    <div style={{ flex: 1, textAlign: 'left', fontSize: '0.9rem' }}>HIP integrated into EBRAINS for European collaboration</div>
+  </div>
+
+  {/* Item 4 */}
+  <div style={{ display: 'flex', alignItems: 'center', margin: '0.5rem 0', minHeight: '2rem' }}>
+    <div style={{ flex: '0 0 140px', textAlign: 'right', color: '#000', fontSize: '0.9rem' }}><strong>2022</strong></div>
+    <div style={{ flex: '0 0 40px', position: 'relative', height: '100%' }}>
+      <span style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', width: '8px', height: '8px', borderRadius: '50%', background: 'var(--chorus-blue)' }} />
+    </div>
+    <div style={{ flex: 1, textAlign: 'left', fontSize: '0.9rem' }}>Decision to generalize HIP into CHORUS for all medical fields</div>
+  </div>
+
+  {/* Item 5 */}
+  <div style={{ display: 'flex', alignItems: 'center', margin: '0.5rem 0', minHeight: '2rem' }}>
+    <div style={{ flex: '0 0 140px', textAlign: 'right', color: '#000', fontSize: '0.9rem' }}><strong>2023</strong></div>
+    <div style={{ flex: '0 0 40px', position: 'relative', height: '100%' }}>
+      <span style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', width: '8px', height: '8px', borderRadius: '50%', background: 'var(--chorus-blue)' }} />
+    </div>
+    <div style={{ flex: 1, textAlign: 'left', fontSize: '0.9rem' }}>CHORUS development launched by CHUV</div>
+  </div>
+
+  {/* Item 6 */}
+  <div style={{ display: 'flex', alignItems: 'center', margin: '0.5rem 0', minHeight: '2rem' }}>
+    <div style={{ flex: '0 0 140px', textAlign: 'right', color: '#000', fontSize: '0.9rem' }}><strong>2025</strong></div>
+    <div style={{ flex: '0 0 40px', position: 'relative', height: '100%' }}>
+      <span style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', width: '8px', height: '8px', borderRadius: '50%', background: 'var(--chorus-blue)' }} />
+    </div>
+    <div style={{ flex: 1, textAlign: 'left', fontSize: '0.9rem' }}>CHORUS alpha version publicly released</div>
+  </div>
+
+  {/* Item 7 */}
+  <div style={{ display: 'flex', alignItems: 'center', margin: '0.5rem 0', minHeight: '2rem' }}>
+    <div style={{ flex: '0 0 140px', textAlign: 'right', color: '#000', fontSize: '0.9rem' }}><strong>2026</strong></div>
+    <div style={{ flex: '0 0 40px', position: 'relative', height: '100%' }}>
+      <span style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', width: 0, height: 0, borderLeft: '6px solid transparent', borderRight: '6px solid transparent', borderTop: '10px solid var(--chorus-blue)' }} />
+    </div>
+    <div style={{ flex: 1, textAlign: 'left', fontSize: '0.9rem' }}>CHORUS.HIP operating as a dedicated neuroscience deployment</div>
+  </div>
+</div>
 
 </AccordionSection>
 
@@ -70,6 +145,10 @@ Track milestones and releases in <a href="/docs/tech/release-notes" style={{ col
 </AccordionSection>
 
 </Accordion>
+
+
+
+
 
 
 

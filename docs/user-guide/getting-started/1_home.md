@@ -2,23 +2,14 @@
 sidebar_position: 1
 ---
 
-# Home Workspace
+# Access the Dashboard
 
-Your **Home Workspace** is the starting point for your CHORUS experience. It provides a personal dashboard where you can manage your work, access datasets, and monitor your resources.
+Start by going to CHORUS – Trusted Research Platform and signing in or registering for an account. Once your account is approved and you log in, you are taken directly to the dashboard, your central point of navigation.
 
-Designed for efficiency and organization, it provides an overview of your active desktops, running applications, and available datasets. You can track your usage, view recent activities, and seamlessly navigate to project workspaces and browse available Applications.
+The dashboard is organized to help you get oriented quickly:
 
-To get started, go to [CHORUS-TRE · GitHub](https://github.com/CHORUS-TRE) and either log in or register for an account. If you're a new user, you'll need to complete a simple registration form. 
-
-![alt text](../../../static/img/getting-started/Home1.png)
-
-Once submitted, your account will be activated after validation by the CHORUS support team. After approval, you can log in with your credentials.
-
-Upon logging in, you will land on your Home Workspace, where you’ll find:
-- An overview of your active desktops and running applications
-- A list of datasets you have access to
-- Information on your current resource usage
-- Your recent activities and research footprint
-
-![alt text](../../../static/img/getting-started/Home2.png)
-
+* Left navigation menu: Your main route to the platform’s features—Dashboard, Centers, Workspaces, Sessions, App Store, and Services.
+* Central dashboard area: A snapshot of what matters now: your active workspaces, current sessions, resource usage, recent activity, and notifications.
+* Right-hand help panel: Direct access to documentation and support whenever you need guidance.
+  
+This structure keeps everything within reach, whether you're starting a new project or continuing ongoing work.

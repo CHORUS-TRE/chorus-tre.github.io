@@ -1,24 +1,21 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
-# Start an App
+# Launch an App
 
-CHORUS provides access to a wide range of **research applications**, including data management tools, statistical analysis software, and AI-based solutions. Applications can be started in two ways:
+Applications can be launched either from a session or directly from the App Store, depending on how you prefer to work.
 
-**Option 1: Launching an App with a New Desktop**
+**Option A: Launch from a Session**
 
-When you create a new desktop, you can select an application before launching it. Once the desktop starts, the chosen app will be preloaded and ready for use.
+* Open an active session.
+* Go to My Apps.
+* Select the app you want to open.
 
-![alt text](../../../static/img/getting-started/App1.png)
+**Option B: Launch from the App Store**
 
-**Option 2: Starting an App in an Existing Desktop**
+* Open the App Store from the navigation menu.
+* Choose the application you need.
+* Launch it in an existing session or create a new session when prompted.
 
-If you already have a desktop running, you can launch additional applications within it:
-
-1.	Open your active desktop.
-2.	Navigate to the My Apps tab.
-
-![alt text](../../../static/img/getting-started/App2.png)
-
-3.	Select the application you want to use, and it will open within your desktop.
+This flexibility allows you to bring the right tools into your workflow at the moment you need them.
