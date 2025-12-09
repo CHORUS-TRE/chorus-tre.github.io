@@ -23,14 +23,18 @@ CHORUS is developed and operated as a community-driven platform, and it is deplo
 		padding: '16px',
 		background: '#f5f5f5',
 	}}>
-		<img
-			src="/img/HIP_LOGO_PRIMAIRE_RVB_Noir.png"
-			alt="CHORUS.HIP"
-			style={{ width: '160px', height: 'auto', objectFit: 'contain', margin: '0 auto 12px', display: 'block' }}
-		/>
-		<p style={{ margin: 0, fontSize: '0.9rem' }}>
-			CHORUS.HIP is dedicated to neuroscience and neuroimaging research, enabling secure access to clinical imaging data, electrophysiology, and multimodal datasets.
-		</p>
+		<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '16px' }}>
+			<img
+				src="/img/HIP_LOGO_PRIMAIRE_RVB_Noir.png"
+				alt="CHORUS.HIP"
+				style={{ height: '48px', width: 'auto', objectFit: 'contain' }}
+			/>
+		</div>
+		<div>
+			<p style={{ margin: 0, fontSize: '0.9rem' }}>
+				CHORUS.HIP is dedicated to neuroscience and neuroimaging research, enabling secure access to clinical imaging data, electrophysiology, and multimodal datasets.
+			</p>
+		</div>
 		<div style={{ marginTop: '12px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
 			<a href="https://ebrains.eu/data-tools-services/medical-analytics/human-intracerebral-eeg-platform" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
 				<div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -52,7 +56,7 @@ CHORUS is developed and operated as a community-driven platform, and it is deplo
 							maskPosition: 'center',
 						}}
 					/>
-					<span style={{ fontSize: '0.9rem', color: '#000' }}>EBRAINS</span>
+					<span style={{ fontSize: '0.9rem', color: '#000', lineHeight: '24px' }}>EBRAINS</span>
 				</div>
 			</a>
 			<a href="https://hip-infrastructure.github.io/welcome.html" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
@@ -75,21 +79,46 @@ CHORUS is developed and operated as a community-driven platform, and it is deplo
 							maskPosition: 'center',
 						}}
 					/>
-					<span style={{ fontSize: '0.9rem', color: '#000' }}>User documentation</span>
+					<span style={{ fontSize: '0.9rem', color: '#000', lineHeight: '24px' }}>User documentation</span>
 				</div>
 			</a>
-			<a href="https://github.com/HIP-infrastructure" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+		</div>
+	</div>
+
+
+
+	<div style={{
+		width: '320px',
+		border: '1px solid #e5e5e5',
+		borderRadius: '8px',
+		padding: '16px',
+		background: '#f5f5f5',
+	}}>
+		<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '16px' }}>
+			<img
+				src="/img/CHUV_Logo_Studioforma_Our-Partners-640w.png"
+				alt="CHUV"
+				style={{ height: '48px', width: 'auto', objectFit: 'contain' }}
+			/>
+		</div>
+		<div>
+			<p style={{ margin: 0, fontSize: '0.9rem' }}>
+				CHORUS.CHUV is the CHUV-wide deployment supporting biomedical research and AI development across all clinical and research domains.
+			</p>
+		</div>
+		<div style={{ marginTop: '12px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+			<a href="https://www.chuv.ch/fr/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
 				<div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
 					<span
-						title="Technical documentation"
-						aria-label="Technical documentation"
+						title="CHUV"
+						aria-label="CHUV"
 						style={{
 							width: '24px',
 							height: '24px',
 							display: 'inline-block',
 							backgroundColor: 'var(--chorus-blue)',
-							WebkitMaskImage: 'url(/img/terminal_100dp_000000_FILL0_wght400_GRAD0_opsz48.png)',
-							maskImage: 'url(/img/terminal_100dp_000000_FILL0_wght400_GRAD0_opsz48.png)',
+							WebkitMaskImage: 'url(/img/apartment_100dp_000000_FILL0_wght400_GRAD0_opsz48.png)',
+							maskImage: 'url(/img/apartment_100dp_000000_FILL0_wght400_GRAD0_opsz48.png)',
 							WebkitMaskRepeat: 'no-repeat',
 							maskRepeat: 'no-repeat',
 							WebkitMaskSize: 'contain',
@@ -98,7 +127,30 @@ CHORUS is developed and operated as a community-driven platform, and it is deplo
 							maskPosition: 'center',
 						}}
 					/>
-					<span style={{ fontSize: '0.9rem', color: '#000' }}>Technical documentation</span>
+					<span style={{ fontSize: '0.9rem', color: '#000', lineHeight: '24px' }}>CHUV</span>
+				</div>
+			</a>
+			<a href="https://docs.chorus-tre.ch/docs/about" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+				<div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+					<span
+						title="User documentation"
+						aria-label="User documentation"
+						style={{
+							width: '24px',
+							height: '24px',
+							display: 'inline-block',
+							backgroundColor: 'var(--chorus-blue)',
+							WebkitMaskImage: 'url(/img/article_person_100dp_000000_FILL0_wght400_GRAD0_opsz48.png)',
+							maskImage: 'url(/img/article_person_100dp_000000_FILL0_wght400_GRAD0_opsz48.png)',
+							WebkitMaskRepeat: 'no-repeat',
+							maskRepeat: 'no-repeat',
+							WebkitMaskSize: 'contain',
+							maskSize: 'contain',
+							WebkitMaskPosition: 'center',
+							maskPosition: 'center',
+						}}
+					/>
+					<span style={{ fontSize: '0.9rem', color: '#000' }}>User documentation</span>
 				</div>
 			</a>
 		</div>

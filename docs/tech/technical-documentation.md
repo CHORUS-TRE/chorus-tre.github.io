@@ -1,11 +1,11 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 
-# Technical Documentation
+# Documentation
 
-For in-depth technical details about CHORUS, including system architecture, deployment instructions, and development guidelines, refer to our **Technical Documentation**. You will find comprehensive resources to help you understand, configure, and contribute to CHORUS.
+For in-depth technical details about CHORUS, including system architecture, deployment instructions, and development guidelines, refer to [CHORUS-TRE on GitHub](https://github.com/CHORUS-TRE). You will find comprehensive resources to help you understand, configure, and contribute to CHORUS.
 
-Explore the documentation on **[CHORUS-TRE · GitHub](https://github.com/CHORUS-TRE)** to access source code, report issues, and contribute improvements.
+
 
