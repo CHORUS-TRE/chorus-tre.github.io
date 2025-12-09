@@ -30,7 +30,7 @@
     "@docusaurus/tsconfig": "^3.6.3",
     "@docusaurus/types": "^3.6.3",
     "html-webpack-plugin": "5.5.0",
-    "typescript": "~5.7.0"
+    "typescript": "~5.9.0"
   },
   "browserslist": {
     "production": [
