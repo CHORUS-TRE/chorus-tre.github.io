@@ -1,43 +1,46 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import {useState} from 'react';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/about">
-            CHORUS-TRE Documentation
-          </Link>
-        </div>
-        
-      </div>
-    </header>
-  );
-}
-
 export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
+  const [isPlaying, setIsPlaying] = useState(false);
   return (
     <Layout
       title={`${siteConfig.title}`}
       description="CHORUS-TRE is a secure Trusted Research Environment developed by the BDSC, NeuroDigital and DSI teams of the University Hospital of Lausanne, Switzerland.">
-      <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <div className="container">
+          <div className={styles.columns}>
+            <div className={styles.leftColumn}>
+              <HomepageFeatures />
+            </div>
+            <div className={styles.rightColumn}>
+              <div className={`${styles.videoContainer} ${isPlaying ? styles.playing : ''}`}>
+                <video
+                  className={styles.video}
+                  src="/video/Chorus_190525_ENG.mp4"
+                  controls
+                  playsInline
+                  preload="metadata"
+                  onPlay={() => setIsPlaying(true)}
+                  onPause={() => setIsPlaying(false)}
+                  onEnded={() => setIsPlaying(false)}
+                >
+                  Your browser does not support the video tag.
+                </video>
+                <div className={styles.videoOverlay}>
+                  <div className={styles.videoTitle}>
+                    Discover how CHORUS can empower your research
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
     </Layout>
   );

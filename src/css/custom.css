@@ -12,7 +12,7 @@
   --chorus-lime: #B6FF12;
   --chorus-flower: #ABA5F5;
 
-  --ifm-color-primary: #1F242A;
+  --ifm-color-primary: var(--chorus-blue);
   --ifm-color-secondary: #B6FC13;
   --ifm-color-primary-dark: #0430CD;
   --ifm-color-primary-darker: #277148;
@@ -29,6 +29,20 @@
   --ifm-pagination-nav-color-hover: var(--ifm-color-primary);
   --ifm-menu-color-active: var(--ifm-color-primary);
   --ifm-link-hover-color: var(--ifm-color-primary)
+
+  /* Responsive spacing scale (edit once, used everywhere) */
+  /* Uses clamp(min, fluid via viewport, max) for adaptability */
+  --space-xs: clamp(0.25rem, 0.2rem + 0.4vw, 0.5rem);
+  --space-sm: clamp(0.5rem, 0.4rem + 0.6vw, 0.9rem);
+  --space-md: clamp(1rem, 0.9rem + 0.8vw, 1.5rem);
+  --space-lg: clamp(1.5rem, 1.2rem + 1.2vw, 2.25rem);
+  --space-xl: clamp(2rem, 1.6rem + 1.6vw, 3rem);
+  --space-2xl: clamp(3rem, 2.4rem + 2.4vw, 4.5rem);
+}
+
+/* Force footer background to pure white */
+:root {
+  --ifm-footer-background-color: #ffffff;
 }
 
 /* Apply chorus blue color to links in main content areas only */
@@ -38,7 +52,7 @@ article .markdown a {
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #1F242A;
+  --ifm-color-primary: var(--chorus-blue);
   --ifm-heading-color: #FFFFFF;
   --ifm-font-color-base-inverse: #FFFFFF;
   --ifm-color-primary-dark: #21af90;
@@ -49,6 +63,35 @@ article .markdown a {
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Ensure footer stays white in dark mode as requested */
+[data-theme='dark'] {
+  --ifm-footer-background-color: #ffffff;
+}
+
+/* Make footer text slightly smaller */
+.footer {
+  font-size: 0.95rem;
+  /* Footer vertical spacing controlled via variables */
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-lg);
+}
+.footer__copyright {
+  font-size: 0.9rem;
+}
+
+/* Header/navbar spacing */
+.navbar {
+  padding-top: var(--space-sm);
+  padding-bottom: var(--space-sm);
+}
+
+/* Global content wrappers can opt into these utilities */
+.pad-sm { padding: var(--space-sm); }
+.pad-md { padding: var(--space-md); }
+.pad-lg { padding: var(--space-lg); }
+.stack-md > * + * { margin-top: var(--space-md); }
+.stack-lg > * + * { margin-top: var(--space-lg); }
 
 /* Change the color of the arrow (marker) for all summary elements */
 /* summary::marker {

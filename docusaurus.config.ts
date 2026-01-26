@@ -70,12 +70,13 @@ const config: Config = {
   ],
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/logo.chorus.primaire.black.png',
+    image: 'img/chorus-logo-black.png',
     navbar: {
       title: '',
       logo: {
         alt: 'CHORUS logo',
-        src: 'img/logo.svg',
+        src: 'img/chorus-logo-black.svg',
+        srcDark: 'img/chorus-logo-white.png',
       },
       items: [
         {
@@ -99,7 +100,7 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       // links: [
       //   {
       //     title: 'Docs',
