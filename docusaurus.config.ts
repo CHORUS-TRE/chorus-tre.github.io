@@ -57,6 +57,14 @@ const config: Config = {
         sidebarPath: undefined,
       }
     ], [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'hip',
+        path: 'hip',
+        routeBasePath: 'hip',
+        sidebarPath: undefined,
+      }
+    ],[
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
         hashed: true,
