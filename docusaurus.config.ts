@@ -55,9 +55,7 @@ const config: Config = {
         path: 'community',
         routeBasePath: 'community',
         sidebarPath: undefined,
-      }
-    ], [
-      '@docusaurus/plugin-content-docs',
+      },
       {
         id: 'hip',
         path: 'hip',
