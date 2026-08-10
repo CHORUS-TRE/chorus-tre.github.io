@@ -62,7 +62,7 @@ const config: Config = {
         id: 'hip',
         path: 'hip',
         routeBasePath: 'hip',
-        sidebarPath: undefined,
+        sidebarPath: './hip/sidebars.ts',
       }
     ],[
       require.resolve("@easyops-cn/docusaurus-search-local"),
@@ -90,7 +90,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'docsSidebar',
           position: 'left',
-          label: 'Documentation',
+          label: 'CHORUS',
         },
         {
           type: 'docSidebar',
@@ -98,6 +98,13 @@ const config: Config = {
           position: 'left',
           label: 'Community',
           docsPluginId: 'community',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'defaultSidebar',
+          position: 'left',
+          label: 'CHORUS.HIP',
+          docsPluginId: 'hip',
         },
         {
           href: 'https://github.com/CHORUS-TRE',
