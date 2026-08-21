@@ -1,0 +1,81 @@
+---
+title: How CHORUS works
+description: How CHORUS is structured to organize users, data, tools, and governed workflows.
+---
+
+import { CircleAlert } from 'lucide-react'
+
+<div className="chorus-page">
+
+<div className="chorus-crumb">
+  <a href="/docs">CHORUS</a>
+  <span className="chorus-sep">/</span>
+  <span>How CHORUS works</span>
+</div>
+
+<div className="chorus-page-head">
+  <div>
+    <div className="chorus-eyebrow">Overview</div>
+
+    # How CHORUS works
+  </div>
+
+  <span className="chorus-chip">Concept</span>
+</div>
+
+<p className="chorus-lead">
+How CHORUS is put together - the structure that organizes users, data, and tools,
+how work happens inside secure environments, and how it stays governed.
+</p>
+
+<div className="chorus-content">
+  <div className="chorus-notebox">
+    <span className="chorus-notebox-ic" aria-hidden="true"><CircleAlert size={18} strokeWidth={2} /></span>
+    <div>
+      <b>In short</b>
+      <p>You work in projects and workspaces; inside them you open sessions that run approved apps. Data is mediated by the platform, access is role-based and logged, and outputs leave only through controlled export.</p>
+    </div>
+  </div>
+
+  ## The building blocks
+
+  - **Instance** - an institutional deployment of CHORUS.
+  - **Community** - a scientific or institutional grouping of users (for example CHORUS.HIP).
+  - **Project** - a governed research activity defining participants, datasets, and permissions.
+  - **Workspace** - the secure environment where you work with data and tools.
+  - **Session** - a running secure environment inside a workspace.
+  - **App** - a pre-approved tool launched inside a session.
+
+  ## How work happens
+
+  Researchers access CHORUS through secure browser-based sessions - no data is downloaded and nothing is installed locally. Tools such as Jupyter, RStudio, VS Code, and domain-specific applications run inside the environment. All data access is mediated by the platform, and data is encrypted in transit and at rest.
+
+  ## The controlled data lifecycle
+
+  Data entering the system is reviewed and authorized. Its use is restricted to defined contexts - projects, with assigned roles and permissions. Data leaving the system goes through controlled export. Every action - access, transformation, analysis, export - is logged and auditable.
+
+  ## The Five Safes
+
+  Protection is layered: **safe people** (authorized, verified users), **safe projects** (approved purposes), **safe settings** (isolated environments), **safe data** (de-identified and protected), and **safe outputs** (reviewed before release).
+
+  ## Standards & compliance
+
+  CHORUS is designed around ISO/IEC 27001 information-security principles, GDPR-compatible practices, Trusted Research Environment frameworks such as SATRE and DARE UK, and Secure Processing Environment concepts associated with the European Health Data Space.
+
+  ## Communities & federation
+
+  Communities share the same platform while keeping their own data, tools, and governance. Where data cannot move, CHORUS supports federated approaches in which only model updates or derived outputs are exchanged - so multi-institution research is possible without centralizing sensitive data.
+</div>
+
+<div className="chorus-pager">
+  <a href="/docs/overview/what-is-chorus">
+    <div className="chorus-pager-lbl">&lt;- Previous</div>
+    <div className="chorus-pager-ttl">What is CHORUS</div>
+  </a>
+  <a className="chorus-pager-next" href="/docs/workspaces/what-a-workspace-is">
+    <div className="chorus-pager-lbl">Next -&gt;</div>
+    <div className="chorus-pager-ttl">What a workspace is</div>
+  </a>
+</div>
+
+</div>

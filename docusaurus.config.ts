@@ -54,26 +54,28 @@ const config: Config = {
         id: 'community',
         path: 'community',
         routeBasePath: 'community',
-        sidebarPath: undefined,
-      }
-    ], [
+        sidebarPath: './sidebarsCommunity.ts',
+      },
+    ],
+    [
       '@docusaurus/plugin-content-docs',
       {
         id: 'hip',
         path: 'hip',
         routeBasePath: 'hip',
-        sidebarPath: undefined,
-      }
-    ],[
-      require.resolve("@easyops-cn/docusaurus-search-local"),
+        sidebarPath: './sidebarsHip.ts',
+      },
+    ],
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
       {
         hashed: true,
-        language: ["en"],
-        docsDir: ["docs", "community"],
-        docsRouteBasePath: ["docs", "community"],
+        language: ['en'],
+        docsDir: ['docs', 'community', 'hip'],
+        docsRouteBasePath: ['docs', 'community', 'hip'],
         indexBlog: false,
-        indexPages: true
-      }
+        indexPages: true,
+      },
     ],
   ],
   themeConfig: {
@@ -90,11 +92,18 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'docsSidebar',
           position: 'left',
-          label: 'Documentation',
+          label: 'CHORUS',
         },
         {
           type: 'docSidebar',
-          sidebarId: 'defaultSidebar',
+          sidebarId: 'hipSidebar',
+          position: 'left',
+          label: 'CHORUS.HIP',
+          docsPluginId: 'hip',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'communitySidebar',
           position: 'left',
           label: 'Community',
           docsPluginId: 'community',
