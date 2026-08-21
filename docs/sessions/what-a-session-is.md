@@ -5,14 +5,6 @@ description: Understand what a session is and how it relates to a workspace.
 
 <div class="chorus-page">
 
-<div class="chorus-crumb">
-	<a href="/docs">CHORUS</a>
-	<span class="chorus-sep">/</span>
-	<span>Sessions</span>
-	<span class="chorus-sep">/</span>
-	<span>What a session is</span>
-</div>
-
 <div class="chorus-page-head">
 	<div>
 		<div class="chorus-eyebrow">Sessions</div>

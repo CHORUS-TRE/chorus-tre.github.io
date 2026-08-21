@@ -8,12 +8,6 @@ import { LogIn, LayoutDashboard, Folder, Monitor, Grid3X3, MessageSquare } from 
 
 <div className="hip-page">
 
-<div className="hip-crumb">
-  <a href="/hip">CHORUS.HIP</a>
-  <span className="hip-sep">/</span>
-  <span>Get access &amp; onboard</span>
-</div>
-
 <div className="hip-page-head">
   <div>
     <div className="hip-eyebrow">Get access &amp; onboard</div>

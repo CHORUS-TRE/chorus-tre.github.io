@@ -91,16 +91,16 @@
 
 .primary {
   background: var(--brand-deep);
-  color: #fff;
+  color: var(--on-brand);
 }
 
 .primary:hover {
-  background: #0c2ecc;
-  color: #fff;
+  background: var(--brand-hover);
+  color: var(--on-brand);
 }
 
 .ghost {
-  background: #fff;
+  background: var(--surface);
   border-color: var(--line);
   color: var(--ink);
 }
@@ -207,7 +207,7 @@
 
 .xstrip {
   background: var(--brand-wash);
-  border: 1px solid #dde2f9;
+  border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 22px 24px;
   display: flex;
@@ -220,8 +220,8 @@
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  background: #fff;
-  border: 1px solid #dde2f9;
+  background: var(--surface);
+  border: 1px solid var(--line);
   display: grid;
   place-items: center;
   flex: none;
@@ -299,7 +299,7 @@
   align-items: center;
   color: var(--muted);
   font-size: 12.5px;
-  border-top: 1px solid #dde2f9;
+  border-top: 1px solid var(--line);
   padding: 16px 24px 34px;
   flex-wrap: wrap;
 }

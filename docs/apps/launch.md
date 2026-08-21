@@ -5,14 +5,6 @@ description: How to run a tool inside a session and work with data in place.
 
 <div class="chorus-page">
 
-<div class="chorus-crumb">
-	<a href="/docs">CHORUS</a>
-	<span class="chorus-sep">/</span>
-	<span>Apps</span>
-	<span class="chorus-sep">/</span>
-	<span>Launch</span>
-</div>
-
 <div class="chorus-page-head">
 	<div>
 		<div class="chorus-eyebrow">Apps</div>

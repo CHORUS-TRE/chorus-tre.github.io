@@ -5,14 +5,6 @@ description: How to browse approved tools and add what you need.
 
 <div class="chorus-page">
 
-<div class="chorus-crumb">
-	<a href="/docs">CHORUS</a>
-	<span class="chorus-sep">/</span>
-	<span>Apps</span>
-	<span class="chorus-sep">/</span>
-	<span>The App Store</span>
-</div>
-
 <div class="chorus-page-head">
 	<div>
 		<div class="chorus-eyebrow">Apps</div>

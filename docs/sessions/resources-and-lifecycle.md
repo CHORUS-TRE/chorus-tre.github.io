@@ -5,14 +5,6 @@ description: How to size sessions and what happens when they run or stop.
 
 <div class="chorus-page">
 
-<div class="chorus-crumb">
-	<a href="/docs">CHORUS</a>
-	<span class="chorus-sep">/</span>
-	<span>Sessions</span>
-	<span class="chorus-sep">/</span>
-	<span>Resources &amp; lifecycle</span>
-</div>
-
 <div class="chorus-page-head">
 	<div>
 		<div class="chorus-eyebrow">Sessions</div>

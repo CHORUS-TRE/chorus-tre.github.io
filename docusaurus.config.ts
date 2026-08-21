@@ -79,6 +79,11 @@ const config: Config = {
     ],
   ],
   themeConfig: {
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+    },
     // Replace with your project's social card
     image: 'img/logo.chorus.primaire.black.png',
     navbar: {
@@ -86,6 +91,7 @@ const config: Config = {
       logo: {
         alt: 'CHORUS logo',
         src: 'img/logo.svg',
+        srcDark: 'img/logo.white.svg',
       },
       items: [
         {
@@ -116,7 +122,7 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       // links: [
       //   {
       //     title: 'Docs',

@@ -5,14 +5,6 @@ description: How to start a secure session inside a workspace.
 
 <div class="chorus-page">
 
-<div class="chorus-crumb">
-	<a href="/docs">CHORUS</a>
-	<span class="chorus-sep">/</span>
-	<span>Sessions</span>
-	<span class="chorus-sep">/</span>
-	<span>Open</span>
-</div>
-
 <div class="chorus-page-head">
 	<div>
 		<div class="chorus-eyebrow">Sessions</div>

@@ -9,9 +9,16 @@ import { Globe } from 'lucide-react'
 
 <div className="hip-home">
 
-<section className="hip-home-hero">
-  <svg className="hip-home-wave" viewBox="0 0 520 200" aria-hidden="true">
-    <path d="M0,100 Q30,100 45,100 T80,100 95,60 110,140 125,30 140,170 155,80 170,120 190,100 T230,100 245,55 260,145 275,100 T320,100 335,75 350,125 370,100 T420,100 435,100 520,100" />
+<section className="hip-home-hero hip-home-hero-eeg">
+  <svg className="hip-home-wave hip-home-wave-eeg" viewBox="0 0 300 300" aria-hidden="true">
+    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.0s' }} points="12,150 30,150 39,58" />
+    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.07s' }} points="39,58 48,212 64,196" />
+    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.14s' }} points="64,196 82,150 118,150" />
+    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.21s' }} points="118,150 127,58 136,212" />
+    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.28s' }} points="136,212 152,196 170,150" />
+    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.35s' }} points="170,150 206,150 215,58" />
+    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.42s' }} points="215,58 224,212 240,196" />
+    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.49s' }} points="240,196 258,150 288,150" />
   </svg>
 
   <div className="hip-home-eyebrow">CHORUS.HIP</div>

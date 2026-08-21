@@ -5,14 +5,6 @@ description: How workspace closure works in CHORUS.
 
 <div class="chorus-page">
 
-<div class="chorus-crumb">
-	<a href="/docs">CHORUS</a>
-	<span class="chorus-sep">/</span>
-	<span>Workspaces</span>
-	<span class="chorus-sep">/</span>
-	<span>Close</span>
-</div>
-
 <div class="chorus-page-head">
 	<div>
 		<div class="chorus-eyebrow">Workspaces</div>

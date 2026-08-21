@@ -5,14 +5,6 @@ description: Understand what apps are and how they run inside CHORUS.
 
 <div class="chorus-page">
 
-<div class="chorus-crumb">
-	<a href="/docs">CHORUS</a>
-	<span class="chorus-sep">/</span>
-	<span>Apps</span>
-	<span class="chorus-sep">/</span>
-	<span>What apps are</span>
-</div>
-
 <div class="chorus-page-head">
 	<div>
 		<div class="chorus-eyebrow">Apps</div>

@@ -5,14 +5,6 @@ description: How to sign in and use your CHORUS dashboard as your home base.
 
 <div class="chorus-page">
 
-<div class="chorus-crumb">
-	<a href="/docs">CHORUS</a>
-	<span class="chorus-sep">/</span>
-	<span>Get started</span>
-	<span class="chorus-sep">/</span>
-	<span>Log in &amp; your dashboard</span>
-</div>
-
 <div class="chorus-page-head">
 	<div>
 		<div class="chorus-eyebrow">Get started</div>

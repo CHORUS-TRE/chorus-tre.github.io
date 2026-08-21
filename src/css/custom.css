@@ -35,6 +35,10 @@
   --ifm-menu-color-active: #1240ff;
   --ifm-menu-color-background-active: #f4f6ff;
   --ifm-link-hover-color: var(--ifm-color-primary);
+
+  /* text drawn on top of a brand-coloured surface, and the brand hover shade */
+  --on-brand: #fff;
+  --brand-hover: #0c2ecc;
 }
 
 /* Sidebar category headers + selected item styling */
@@ -62,7 +66,6 @@
 .theme-doc-sidebar-menu .menu__link--active {
   color: #1240ff;
   background: #f7f9ff;
-  box-shadow: inset 2px 0 0 #1240ff;
 }
 
 .theme-doc-sidebar-menu .menu__link--sublist.menu__link--active,
@@ -101,7 +104,7 @@ article .markdown a {
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #1F242A;
+  --ifm-color-primary: #b6ff12;
   --ifm-heading-color: #FFFFFF;
   --ifm-font-color-base-inverse: #FFFFFF;
   --ifm-color-primary-dark: #21af90;
@@ -396,7 +399,7 @@ article .markdown a {
   width: 30px;
   height: 30px;
   background: var(--ch-brand);
-  color: #fff;
+  color: var(--on-brand);
   font-weight: 700;
   font-size: 14px;
   border-radius: 8px;
@@ -610,7 +613,7 @@ article .markdown a {
   width: 30px;
   height: 30px;
   background: var(--hip-brand);
-  color: #fff;
+  color: var(--on-brand);
   font-weight: 700;
   font-size: 14px;
   border-radius: 8px;
@@ -792,6 +795,33 @@ article .markdown a {
   stroke-linecap: round;
 }
 
+/* CHORUS.HIP hero - a single EEG trace of 3 spike-and-wave complexes, drawn
+   with straight segments to match the CHORUS and Community heroes.
+   Sits fully inside the hero (the old trace bled off the right edge). */
+.hip-home-hero-eeg {
+  padding-right: clamp(30px, 27vw, 360px);
+}
+
+.hip-home-wave-eeg {
+  right: 14px;
+  top: 30px;
+  width: min(27%, 280px);
+  opacity: 0.85;
+}
+
+.hip-home-wave-eeg polyline {
+  stroke: var(--brand);
+  stroke-width: 2;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.hip-home-wave-trace {
+  opacity: 0;
+  animation: chorus-seg 0.7s ease both;
+}
+
 .chorus-home-hero {
   padding-right: clamp(30px, 27vw, 360px);
 }
@@ -910,19 +940,19 @@ article .markdown a {
 
 .hip-home-btn-primary {
   background: var(--brand);
-  color: #fff;
+  color: var(--on-brand);
 }
 
 .markdown .hip-home .hip-home-btn-primary,
 .markdown .hip-home .hip-home-btn-primary:visited,
 .markdown .hip-home .hip-home-btn-primary:hover,
 .markdown .hip-home .hip-home-btn-primary:focus {
-  color: #fff;
+  color: var(--on-brand);
 }
 
 .hip-home-btn-primary:hover {
-  background: #0c2ecc;
-  color: #fff;
+  background: var(--brand-hover);
+  color: var(--on-brand);
 }
 
 .hip-home-btn-ghost {
@@ -1001,7 +1031,7 @@ article .markdown a {
 .hip-home-num {
   font-weight: 700;
   font-size: 14px;
-  color: #fff;
+  color: var(--on-brand);
   background: var(--brand);
   width: 30px;
   height: 30px;
@@ -1128,7 +1158,8 @@ article .markdown a {
 
 @media (max-width: 996px) {
   .chorus-home-hero,
-  .community-home-hero {
+  .community-home-hero,
+  .hip-home-hero-eeg {
     padding-right: 30px;
   }
 
@@ -1153,3 +1184,187 @@ article .markdown a {
   }
 }
 
+
+/* Site footer - light band with black text */
+.theme-layout-footer.footer {
+  --ifm-footer-background-color: #f7f9ff;
+  --ifm-footer-color: #000;
+  --ifm-footer-link-color: #000;
+  --ifm-footer-title-color: #000;
+  background-color: #f7f9ff;
+  color: #000;
+  border-top: 1px solid #dde2f9;
+}
+
+.theme-layout-footer.footer .footer__copyright,
+.theme-layout-footer.footer .footer__title,
+.theme-layout-footer.footer .footer__item,
+.theme-layout-footer.footer .footer__link-item {
+  color: #000;
+}
+
+
+/* ============================================================
+   Dark mode
+   Overrides every light-only value used by the four style
+   systems: Infima, the home page module, the hip-page and
+   chorus-page content layouts, and the hip-home landing layout.
+   ============================================================ */
+
+html[data-theme='dark'] {
+  /* Accent is CHORUS lime; the blue survives as the block/wash colour. */
+  --ink: #e7ecf7;
+  --brand: #b6ff12;
+  --brand-deep: #b6ff12;
+  --brand-wash: #1a2138;
+  --line: #2e3650;
+  --muted: #a4aec6;
+  --surface: #1e2230;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.35);
+
+  /* lime is a light surface - anything sitting on it needs dark text */
+  --on-brand: #0b1020;
+  --brand-hover: #cdff6b;
+
+  /* Infima */
+  --ifm-color-primary: #b6ff12;
+  --ifm-link-color: #b6ff12;
+  --ifm-link-hover-color: #d4ff7d;
+  --ifm-navbar-link-color: #d6ddf0;
+  --ifm-menu-color-active: #b6ff12;
+  --ifm-menu-color-background-active: #232b47;
+}
+
+html[data-theme='dark'] article .markdown a {
+  color: #b6ff12;
+}
+
+html[data-theme='dark'] article .markdown a:hover {
+  color: #d4ff7d;
+}
+
+/* Sidebar */
+html[data-theme='dark'] .theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link {
+  color: #a4aec6;
+}
+
+html[data-theme='dark'] .theme-doc-sidebar-menu .menu__link:hover {
+  background: #232b47;
+}
+
+html[data-theme='dark'] .theme-doc-sidebar-menu .menu__link--active,
+html[data-theme='dark'] .theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link.menu__link--active {
+  color: #b6ff12;
+  background: #232b47;
+}
+
+html[data-theme='dark'] .theme-doc-sidebar-menu > li:first-child > .menu__link {
+  border-bottom-color: #2e3650;
+}
+
+/* Content pages - CHORUS.HIP */
+html[data-theme='dark'] .hip-page {
+  --hip-ink: #e7ecf7;
+  --hip-brand: #b6ff12;
+  --hip-brand-wash: #1a2138;
+  --hip-line: #2e3650;
+  --hip-muted: #a4aec6;
+}
+
+html[data-theme='dark'] .hip-page .hip-chip,
+html[data-theme='dark'] .hip-page .hip-notebox {
+  border-color: #2e3650;
+}
+
+html[data-theme='dark'] .hip-page .hip-notebox-warn {
+  background: #2b2f16;
+  border-color: #4f5a24;
+}
+
+html[data-theme='dark'] .hip-page .hip-notebox-ic-warn {
+  color: #e4ffa8;
+}
+
+html[data-theme='dark'] .hip-page .hip-note {
+  background: #1a2138;
+}
+
+/* Content pages - CHORUS */
+html[data-theme='dark'] .chorus-page {
+  --ch-ink: #e7ecf7;
+  --ch-brand: #b6ff12;
+  --ch-brand-wash: #1a2138;
+  --ch-line: #2e3650;
+  --ch-muted: #a4aec6;
+}
+
+html[data-theme='dark'] .chorus-page .chorus-chip,
+html[data-theme='dark'] .chorus-page .chorus-notebox {
+  border-color: #2e3650;
+}
+
+html[data-theme='dark'] .chorus-page .chorus-notebox-warn {
+  background: #2b2f16;
+  border-color: #4f5a24;
+}
+
+/* Cards */
+html[data-theme='dark'] .hip-card {
+  background: var(--surface);
+}
+
+html[data-theme='dark'] .hip-card .hip-card-ic {
+  border-color: #2e3650;
+}
+
+/* Landing layouts */
+html[data-theme='dark'] .hip-home {
+  --ink: #e7ecf7;
+  --brand: #b6ff12;
+  --brand-wash: #1a2138;
+  --line: #2e3650;
+  --muted: #a4aec6;
+  --surface: #1e2230;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme='dark'] .hip-home-btn-ghost {
+  background: #1e2230;
+}
+
+html[data-theme='dark'] .hip-home-chip,
+html[data-theme='dark'] .hip-home-xstrip,
+html[data-theme='dark'] .hip-home-ic {
+  border-color: #2e3650;
+}
+
+html[data-theme='dark'] .hip-home-ic {
+  background: #1e2230;
+}
+
+/* Footer stays dark in dark mode (light band is a light-mode choice) */
+html[data-theme='dark'] .theme-layout-footer.footer {
+  background-color: #16192a;
+  color: var(--ink);
+  border-top-color: #2e3650;
+}
+
+html[data-theme='dark'] .theme-layout-footer.footer .footer__copyright,
+html[data-theme='dark'] .theme-layout-footer.footer .footer__title,
+html[data-theme='dark'] .theme-layout-footer.footer .footer__item,
+html[data-theme='dark'] .theme-layout-footer.footer .footer__link-item {
+  color: var(--ink);
+}
+
+
+/* ============================================================
+   Landing pages (CHORUS, CHORUS.HIP, Community) run wider than
+   the reading pages - they are card grids, not prose.
+   Docusaurus stamps a per-plugin class on the html element.
+   ============================================================ */
+
+html.docs-doc-id-index.plugin-id-default .container.padding-top--md,
+html.docs-doc-id-index.plugin-id-hip .container.padding-top--md,
+html.docs-doc-id-index.plugin-id-community .container.padding-top--md {
+  max-width: min(1600px, 96vw);
+}

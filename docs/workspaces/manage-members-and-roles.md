@@ -5,14 +5,6 @@ description: In a collaborative workspace, the principal investigator manages me
 
 <div class="chorus-page">
 
-<div class="chorus-crumb">
-	<a href="/docs">CHORUS</a>
-	<span class="chorus-sep">/</span>
-	<span>Workspaces</span>
-	<span class="chorus-sep">/</span>
-	<span>Manage members &amp; roles</span>
-</div>
-
 <div class="chorus-page-head">
 	<div>
 		<div class="chorus-eyebrow">Workspaces</div>

@@ -7,26 +7,18 @@ description: An open-source Trusted Research Environment for biomedical research
 
 <section className="hip-home-hero chorus-home-hero">
 	<svg className="hip-home-wave chorus-home-wave" viewBox="0 0 300 300" aria-hidden="true">
-		<line className="chorus-home-wave-line" style={{ animationDelay: '0s' }} x1="207.2" y1="183.0" x2="259.1" y2="213.0" />
-		<line className="chorus-home-wave-line" style={{ animationDelay: '0.04s' }} x1="196.0" y1="197.3" x2="237.9" y2="240.3" />
-		<line className="chorus-home-wave-line" style={{ animationDelay: '0.08s' }} x1="181.4" y1="208.0" x2="210.0" y2="260.8" />
-		<line className="chorus-home-wave-line" style={{ animationDelay: '0.12s' }} x1="164.4" y1="214.4" x2="177.6" y2="273.0" />
-		<line className="chorus-home-wave-line" style={{ animationDelay: '0.16s' }} x1="146.4" y1="215.9" x2="143.1" y2="275.8" />
-		<line className="chorus-home-wave-line" style={{ animationDelay: '0.2s' }} x1="128.6" y1="212.4" x2="109.1" y2="269.2" />
-		<line className="chorus-home-wave-line" style={{ animationDelay: '0.24s' }} x1="112.4" y1="204.2" x2="78.2" y2="253.5" />
-		<line className="chorus-home-wave-line" style={{ animationDelay: '0.28s' }} x1="99.1" y1="192.0" x2="52.7" y2="230.1" />
-		<line className="chorus-home-wave-line" style={{ animationDelay: '0.32s' }} x1="89.6" y1="176.5" x2="34.6" y2="200.6" />
-		<line className="chorus-home-wave-line" style={{ animationDelay: '0.36s' }} x1="84.6" y1="159.1" x2="25.2" y2="167.3" />
-		<line className="chorus-home-wave-line" style={{ animationDelay: '0.4s' }} x1="84.6" y1="140.9" x2="25.2" y2="132.7" />
-		<line className="chorus-home-wave-line" style={{ animationDelay: '0.44s' }} x1="89.6" y1="123.5" x2="34.6" y2="99.4" />
-		<line className="chorus-home-wave-line" style={{ animationDelay: '0.48s' }} x1="99.1" y1="108.0" x2="52.7" y2="69.9" />
-		<line className="chorus-home-wave-line" style={{ animationDelay: '0.52s' }} x1="112.4" y1="95.8" x2="78.2" y2="46.5" />
-		<line className="chorus-home-wave-line" style={{ animationDelay: '0.56s' }} x1="128.6" y1="87.6" x2="109.1" y2="30.8" />
-		<line className="chorus-home-wave-line" style={{ animationDelay: '0.6s' }} x1="146.4" y1="84.1" x2="143.1" y2="24.2" />
-		<line className="chorus-home-wave-line" style={{ animationDelay: '0.64s' }} x1="164.4" y1="85.6" x2="177.6" y2="27.0" />
-		<line className="chorus-home-wave-line" style={{ animationDelay: '0.68s' }} x1="181.4" y1="92.0" x2="210.0" y2="39.2" />
-		<line className="chorus-home-wave-line" style={{ animationDelay: '0.72s' }} x1="196.0" y1="102.7" x2="237.9" y2="59.7" />
-		<line className="chorus-home-wave-line" style={{ animationDelay: '0.76s' }} x1="207.2" y1="117.0" x2="259.1" y2="87.0" />
+		<line className="chorus-home-wave-line" style={{ animationDelay: '0.0s' }} x1="187.9" y1="204.1" x2="222.3" y2="253.2" />
+		<line className="chorus-home-wave-line" style={{ animationDelay: '0.06s' }} x1="164.0" y1="214.5" x2="176.8" y2="273.1" />
+		<line className="chorus-home-wave-line" style={{ animationDelay: '0.12s' }} x1="138.0" y1="214.9" x2="127.1" y2="273.9" />
+		<line className="chorus-home-wave-line" style={{ animationDelay: '0.18s' }} x1="113.9" y1="205.2" x2="81.0" y2="255.5" />
+		<line className="chorus-home-wave-line" style={{ animationDelay: '0.24s' }} x1="95.3" y1="187.0" x2="45.7" y2="220.6" />
+		<line className="chorus-home-wave-line" style={{ animationDelay: '0.3s' }} x1="85.3" y1="163.0" x2="26.5" y2="174.8" />
+		<line className="chorus-home-wave-line" style={{ animationDelay: '0.36s' }} x1="85.3" y1="137.0" x2="26.5" y2="125.2" />
+		<line className="chorus-home-wave-line" style={{ animationDelay: '0.42s' }} x1="95.3" y1="113.0" x2="45.7" y2="79.4" />
+		<line className="chorus-home-wave-line" style={{ animationDelay: '0.48s' }} x1="113.9" y1="94.8" x2="81.0" y2="44.5" />
+		<line className="chorus-home-wave-line" style={{ animationDelay: '0.54s' }} x1="138.0" y1="85.1" x2="127.1" y2="26.1" />
+		<line className="chorus-home-wave-line" style={{ animationDelay: '0.6s' }} x1="164.0" y1="85.5" x2="176.8" y2="26.9" />
+		<line className="chorus-home-wave-line" style={{ animationDelay: '0.66s' }} x1="187.9" y1="95.9" x2="222.3" y2="46.8" />
 	</svg>
 
 	<div className="chorus-home-copy">

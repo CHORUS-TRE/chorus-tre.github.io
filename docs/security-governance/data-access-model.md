@@ -5,14 +5,6 @@ description: How data access is governed in CHORUS.
 
 <div class="chorus-page">
 
-<div class="chorus-crumb">
-	<a href="/docs">CHORUS</a>
-	<span class="chorus-sep">/</span>
-	<span>Security &amp; governance</span>
-	<span class="chorus-sep">/</span>
-	<span>Data access model</span>
-</div>
-
 <div class="chorus-page-head">
 	<div>
 		<div class="chorus-eyebrow">Security &amp; governance</div>

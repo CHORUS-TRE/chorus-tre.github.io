@@ -8,14 +8,6 @@ import { CircleAlert } from 'lucide-react'
 
 <div className="chorus-page">
 
-<div className="chorus-crumb">
-	<a href="/community">Community</a>
-	<span className="chorus-sep">/</span>
-	<span>Overview</span>
-	<span className="chorus-sep">/</span>
-	<span>Communities</span>
-</div>
-
 <div className="chorus-page-head">
 	<div>
 		<div className="chorus-eyebrow">Overview</div>

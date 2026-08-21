@@ -5,12 +5,6 @@ description: CHORUS is an open-source Secure Processing Environment and Trusted 
 
 <div class="chorus-page">
 
-<div class="chorus-crumb">
-	<a href="/docs">CHORUS</a>
-	<span class="chorus-sep">/</span>
-	<span>What is CHORUS</span>
-</div>
-
 <div class="chorus-page-head">
 	<div>
 		<div class="chorus-eyebrow">Overview</div>

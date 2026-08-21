@@ -5,14 +5,6 @@ description: How to install CHORUS.
 
 <div class="chorus-page">
 
-<div class="chorus-crumb">
-	<a href="/docs">CHORUS</a>
-	<span class="chorus-sep">/</span>
-	<span>Deploy CHORUS</span>
-	<span class="chorus-sep">/</span>
-	<span>Install</span>
-</div>
-
 <div class="chorus-page-head">
 	<div>
 		<div class="chorus-eyebrow">Deploy CHORUS</div>

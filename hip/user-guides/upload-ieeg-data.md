@@ -8,14 +8,6 @@ import { CircleAlert, TriangleAlert } from 'lucide-react'
 
 <div className="hip-page">
 
-<div className="hip-crumb">
-	<a href="/hip">CHORUS.HIP</a>
-	<span className="hip-sep">/</span>
-	<span>User guides</span>
-	<span className="hip-sep">/</span>
-	<span>Upload iEEG data</span>
-</div>
-
 <div className="hip-page-head">
 	<div>
 		<div className="hip-eyebrow">User guides</div>
