@@ -837,10 +837,13 @@ article .markdown a {
   opacity: 0.8;
 }
 
-.chorus-home-wave line {
+.chorus-home-wave path {
+  fill: none;
   stroke: var(--brand);
-  stroke-width: 2;
   stroke-linecap: round;
+  stroke-linejoin: round;
+  /* width comes from the group's strokeWidth, which is pre-scaled */
+  stroke-width: inherit;
 }
 
 .chorus-home-wave-line {
@@ -1226,6 +1229,7 @@ html[data-theme='dark'] {
   --on-brand: #0b1020;
   --brand-hover: #cdff6b;
 
+
   /* Infima */
   --ifm-color-primary: #b6ff12;
   --ifm-link-color: #b6ff12;
@@ -1358,13 +1362,15 @@ html[data-theme='dark'] .theme-layout-footer.footer .footer__link-item {
 
 
 /* ============================================================
-   Landing pages (CHORUS, CHORUS.HIP, Community) run wider than
-   the reading pages - they are card grids, not prose.
+   Landing pages (CHORUS, CHORUS.HIP, Community) carry no table
+   of contents, so release the theme's 75% column cap and let the
+   content fill the standard container. This keeps their left edge
+   identical to every other page at any window width.
    Docusaurus stamps a per-plugin class on the html element.
    ============================================================ */
 
-html.docs-doc-id-index.plugin-id-default .container.padding-top--md,
-html.docs-doc-id-index.plugin-id-hip .container.padding-top--md,
-html.docs-doc-id-index.plugin-id-community .container.padding-top--md {
-  max-width: min(1600px, 96vw);
+html.docs-doc-id-index.plugin-id-default [class*='docItemCol'],
+html.docs-doc-id-index.plugin-id-hip [class*='docItemCol'],
+html.docs-doc-id-index.plugin-id-community [class*='docItemCol'] {
+  max-width: 100% !important;
 }

@@ -11,11 +11,11 @@ import { Globe } from 'lucide-react'
 
 <section className="hip-home-hero community-home-hero">
   <svg className="hip-home-wave community-home-wave" viewBox="0 0 300 300" aria-hidden="true">
-    <polygon className="community-home-wave-poly" style={{ animationDelay: '0s' }} points="106.0,110.0 80.0,125.0 54.0,110.0 54.0,80.0 80.0,65.0 106.0,80.0" />
-    <polygon className="community-home-wave-poly" style={{ animationDelay: '0.1s' }} points="230.8,92.0 210.0,104.0 189.2,92.0 189.2,68.0 210.0,56.0 230.8,68.0" />
-    <polygon className="community-home-wave-poly" style={{ animationDelay: '0.2s' }} points="184.6,178.0 150.0,198.0 115.4,178.0 115.4,138.0 150.0,118.0 184.6,138.0" />
-    <polygon className="community-home-wave-poly" style={{ animationDelay: '0.3s' }} points="114.1,226.0 95.0,237.0 75.9,226.0 75.9,204.0 95.0,193.0 114.1,204.0" />
-    <polygon className="community-home-wave-poly" style={{ animationDelay: '0.4s' }} points="257.4,222.0 228.0,239.0 198.6,222.0 198.6,188.0 228.0,171.0 257.4,188.0" />
+    <polygon className="community-home-wave-poly" style={{ animationDelay: '0s' }} points="82.9,99.4 47.8,119.6 12.7,99.4 12.7,58.9 47.8,38.6 82.9,58.9" />
+    <polygon className="community-home-wave-poly" style={{ animationDelay: '0.1s' }} points="251.4,75.1 223.3,91.3 195.2,75.1 195.2,42.7 223.3,26.5 251.4,42.7" />
+    <polygon className="community-home-wave-poly" style={{ animationDelay: '0.2s' }} points="189.0,191.2 142.3,218.2 95.6,191.2 95.6,137.2 142.3,110.2 189.0,137.2" />
+    <polygon className="community-home-wave-poly" style={{ animationDelay: '0.3s' }} points="93.8,256.0 68.1,270.8 42.3,256.0 42.3,226.3 68.1,211.4 93.8,226.3" />
+    <polygon className="community-home-wave-poly" style={{ animationDelay: '0.4s' }} points="287.3,250.6 247.6,273.5 207.9,250.6 207.9,204.7 247.6,181.7 287.3,204.7" />
   </svg>
 
   <div className="hip-home-eyebrow">Community</div>

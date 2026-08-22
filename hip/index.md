@@ -11,14 +11,14 @@ import { Globe } from 'lucide-react'
 
 <section className="hip-home-hero hip-home-hero-eeg">
   <svg className="hip-home-wave hip-home-wave-eeg" viewBox="0 0 300 300" aria-hidden="true">
-    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.0s' }} points="12,150 30,150 39,58" />
-    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.07s' }} points="39,58 48,212 64,196" />
-    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.14s' }} points="64,196 82,150 118,150" />
-    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.21s' }} points="118,150 127,58 136,212" />
-    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.28s' }} points="136,212 152,196 170,150" />
-    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.35s' }} points="170,150 206,150 215,58" />
-    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.42s' }} points="215,58 224,212 240,196" />
-    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.49s' }} points="240,196 258,150 288,150" />
+    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.0s' }} points="12,150 30,150 39,12" />
+    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.07s' }} points="39,12 48,243 64,219" />
+    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.14s' }} points="64,219 82,150 118,150" />
+    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.21s' }} points="118,150 127,12 136,243" />
+    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.28s' }} points="136,243 152,219 170,150" />
+    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.35s' }} points="170,150 206,150 215,12" />
+    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.42s' }} points="215,12 224,243 240,219" />
+    <polyline className="hip-home-wave-trace" style={{ animationDelay: '0.49s' }} points="240,219 258,150 288,150" />
   </svg>
 
   <div className="hip-home-eyebrow">CHORUS.HIP</div>

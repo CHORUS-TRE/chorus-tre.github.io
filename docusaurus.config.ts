@@ -115,6 +115,11 @@ const config: Config = {
           docsPluginId: 'community',
         },
         {
+          href: 'https://www.chorus-tre.ch/en/',
+          label: 'chorus-tre.ch',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/CHORUS-TRE',
           label: 'GitHub',
           position: 'right',

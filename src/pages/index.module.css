@@ -11,6 +11,7 @@
   --surface: #fff;
   --shadow: 0 1px 2px rgba(11, 16, 32, 0.04), 0 8px 24px rgba(11, 16, 32, 0.05);
   --maxw: 1180px;
+
   --radius: 14px;
 }
 
@@ -32,7 +33,47 @@
 }
 
 .heroInner {
+  position: relative;
   padding: 70px 0 58px;
+  padding-right: clamp(24px, 40vw, 470px);
+}
+
+/* Hero illustration: the full CHORUS logo - wedge ring as outline,
+   wordmark filled. Single brand colour (lime in dark, blue in light). */
+.heroArt {
+  position: absolute;
+  right: 12px;
+  top: 84px;
+  width: min(38%, 420px);
+  opacity: 0.95;
+  pointer-events: none;
+}
+
+.heroArtRing path {
+  fill: none;
+  stroke: var(--brand);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.heroArtWord path {
+  fill: var(--brand);
+  stroke: none;
+}
+
+.art {
+  opacity: 0;
+  animation: heroArtSeg 0.7s ease both;
+}
+
+@keyframes heroArtSeg {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@media (max-width: 996px) {
+  .heroArt { display: none; }
+  .heroInner { padding-right: 24px; }
 }
 
 .eyebrow {
@@ -225,6 +266,7 @@
   display: grid;
   place-items: center;
   flex: none;
+  color: var(--brand);
 }
 
 .xcopy {
